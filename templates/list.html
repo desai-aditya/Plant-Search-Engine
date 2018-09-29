@@ -1,0 +1,13 @@
+<html>
+<body bgcolor="#06d6a0">
+<center>  <h1> Top results </h1> </center>
+<img src="./templates/plant.jpg" >
+<ol>
+{% for element in top_pages %}
+     <center>  <li> <a href= {{ element }}> {{ element.split("/")[2].split(".")[0] }}</a> </li> </center>
+{% endfor %}
+
+</ol>
+</body>
+
+</html>
